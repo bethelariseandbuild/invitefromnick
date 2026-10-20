@@ -111,33 +111,18 @@
     background: var(--navy);
   }
 
-  .note h2 {
-    margin: 26px 0 0;
-    font-size: 17px;
+  .cue {
+    margin: 10px 0 0;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.3;
     color: var(--navy);
+    text-align: center;
   }
-  .steps {
-    margin: 10px 0 0;
-    padding: 0;
-    list-style: none;
-    counter-reset: step;
-    font-size: 15px;
-    line-height: 1.45;
-  }
-  .steps li {
-    counter-increment: step;
-    position: relative;
-    padding-left: 22px;
-  }
-  .steps li + li { margin-top: 7px; }
-  .steps li::before {
-    content: counter(step) ".";
-    position: absolute;
-    left: 0;
-    font-weight: 700;
-    color: var(--navy);
+  .msg {
+    margin: 20px 0 0;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .btn {
@@ -163,6 +148,7 @@
     line-height: 1.45;
     color: var(--muted);
     text-align: center;
+    text-wrap: balance;
   }
 
   @media (prefers-reduced-motion: no-preference) {
@@ -176,7 +162,7 @@
     .note { padding: 34px 44px 30px 18px; }
     .logo { width: 180px; }
     .video { margin-top: 20px; }
-    .note h2 { margin-top: 20px; }
+    .msg { margin-top: 18px; }
     .btn { margin-top: 20px; padding: 14px 34px; }
     .fine { margin-top: 12px; }
   }
@@ -194,7 +180,7 @@
     .head h1 { font-size: 19px; }
     .logo { width: 150px; }
     .video { margin-top: 18px; }
-    .note h2 { margin-top: 22px; }
+    .msg { margin-top: 18px; }
     .btn { align-self: stretch; text-align: center; margin-top: 22px; }
   }
 
@@ -205,8 +191,7 @@
     .head h1 { font-size: 18px; }
     .logo { width: 130px; }
     .video { margin-top: 14px; }
-    .note h2 { margin-top: 18px; font-size: 16px; }
-    .steps { font-size: 14.5px; }
+    .msg { margin-top: 16px; font-size: 15px; }
     .btn { margin-top: 18px; padding: 15px 14px; font-size: 17px; }
     .fine { font-size: 12px; }
   }
@@ -224,9 +209,8 @@
     .head h1 { font-size: 17px; }
     .logo { width: 120px; }
     .video { margin-top: 12px; }
-    .note h2 { margin-top: 14px; font-size: 15px; }
-    .steps { margin-top: 6px; font-size: 13.5px; }
-    .steps li + li { margin-top: 4px; }
+    .cue { margin-top: 8px; font-size: 13px; }
+    .msg { margin-top: 12px; font-size: 14px; }
     .btn { align-self: center; margin-top: 14px; padding: 11px 24px; font-size: 16px; }
     .fine { margin-top: 10px; font-size: 11.5px; }
   }
@@ -260,17 +244,14 @@
         </script>
       </div>
 
-      <h2>Increase Income Framework</h2>
-      <ol class="steps">
-        <li>What talents/skills/abilities has God given me to steward well?</li>
-        <li>Define: What does faithfulness and success look like in using this to increase my income?</li>
-        <li>What is the main problem causing me to get stuck, and what specifically do I need to do to fix it?</li>
-      </ol>
+      <p class="cue">Watch the 2-min video</p>
+
+      <p class="msg">Hey it's Nick from Bethel Arise &amp; Build. I have a personal invite that I'd like to share with you. I think it will bless you.</p>
 
       <a class="btn" href="https://calendly.com/nick-dan-bethel/video-call-with-nick-from-bethel-a-b" target="_blank" rel="noopener">Yes, I want this for Free</a>
     </section>
   </main>
 
-  <p class="fine"><strong>Disclaimer:</strong> This is not professional consulting or financial advice on behalf of Nick or Bethel. Just Nick as a friend talking through this with you.</p>
+  <p class="fine"><strong>Disclaimer:</strong> Not professional or financial advice on behalf of Nick or Bethel. For informational purposes only.</p>
 </body>
 </html>
