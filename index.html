@@ -104,23 +104,9 @@
   }
   .logo { width: 200px; height: auto; display: block; margin-left: auto; }
 
-  .video {
-    margin-top: 28px;
-    border-radius: 3px;
-    overflow: hidden;
-    background: var(--navy);
-  }
 
-  .cue {
-    margin: 10px 0 0;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--navy);
-    text-align: center;
-  }
   .msg {
-    margin: 20px 0 0;
+    margin: 24px 0 0;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -144,29 +130,19 @@
   .btn:hover { background: #4ab3db; }
   .btn:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
 
-  .fine {
-    margin: 16px 0 0;
-    font-size: 12.5px;
-    line-height: 1.45;
-    color: var(--muted);
-    text-align: center;
-    text-wrap: balance;
-  }
 
   @media (prefers-reduced-motion: no-preference) {
-    .card, .fine { animation: settle 0.6s ease-out both; }
+    .card { animation: settle 0.6s ease-out both; }
     @keyframes settle { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
   }
 
-  /* Shorter laptop screens: tightened so the card and disclaimer fit without scrolling. */
+  /* Shorter laptop screens: tightened so the card fits without scrolling. */
   @media (min-width: 821px) and (min-height: 501px) and (max-height: 900px) {
     body { padding: 20px 24px; }
     .note { padding: 34px 44px 30px 18px; }
     .logo { width: 180px; }
-    .video { margin-top: 20px; }
     .msg { margin-top: 18px; }
     .btn { margin-top: 20px; padding: 14px 34px; }
-    .fine { margin-top: 12px; }
   }
   @media (min-width: 821px) and (min-height: 501px) and (max-height: 760px) {
     body { padding: 14px 24px; }
@@ -181,7 +157,6 @@
     .note { padding: 20px 22px 26px; }
     .head h1 { font-size: 19px; }
     .logo { width: 150px; }
-    .video { margin-top: 18px; }
     .msg { margin-top: 18px; }
     .btn { align-self: stretch; text-align: center; margin-top: 22px; }
   }
@@ -192,10 +167,8 @@
     .note { padding: 16px 16px 20px; }
     .head h1 { font-size: 18px; }
     .logo { width: 130px; }
-    .video { margin-top: 14px; }
     .msg { margin-top: 16px; font-size: 15px; }
     .btn { margin-top: 18px; padding: 15px 14px; font-size: 17px; }
-    .fine { font-size: 12px; }
   }
 
   @media (max-width: 359px) {
@@ -210,11 +183,8 @@
     .note { padding: 16px 24px 16px 12px; }
     .head h1 { font-size: 17px; }
     .logo { width: 120px; }
-    .video { margin-top: 12px; }
-    .cue { margin-top: 8px; font-size: 13px; }
     .msg { margin-top: 12px; font-size: 14px; }
     .btn { align-self: center; margin-top: 14px; padding: 11px 24px; font-size: 16px; }
-    .fine { margin-top: 10px; font-size: 11.5px; }
   }
 </style>
 </head>
@@ -230,35 +200,14 @@
         <img class="logo" src="assets/logo-navy.svg" alt="arise &amp; build" width="200" height="56">
       </div>
 
-      <!-- VIDEO: Vidalytics embed from Nick's Bethel Vidalytics account. -->
-      <div class="video">
-        <div id="vidalytics_embed_yNAV8EKoYihryi5m" style="width: 100%; position:relative; padding-top: 56.25%;"></div>
-        <script type="text/javascript">
-        (function (v, i, d, a, l, y, t, c, s) {
-            y='_'+d.toLowerCase();c=d+'L';if(!v[d]){v[d]={};}if(!v[c]){v[c]={};}if(!v[y]){v[y]={};}var vl='Loader',vli=v[y][vl],vsl=v[c][vl + 'Script'],vlf=v[c][vl + 'Loaded'],ve='Embed';
-            if (!vsl){vsl=function(u,cb){
-                if(t){cb();return;}s=i.createElement("script");s.type="text/javascript";s.async=1;s.src=u;
-                if(s.readyState){s.onreadystatechange=function(){if(s.readyState==="loaded"||s.readyState=="complete"){s.onreadystatechange=null;vlf=1;cb();}};}else{s.onload=function(){vlf=1;cb();};}
-                i.getElementsByTagName("head")[0].appendChild(s);
-            };}
-            vsl(l+'loader.min.js',function(){if(!vli){var vlc=v[c][vl];vli=new vlc();}vli.loadScript(l+'player.min.js',function(){var vec=v[d][ve];t=new vec();t.run(a);});});
-        })(window, document, 'Vidalytics', 'vidalytics_embed_yNAV8EKoYihryi5m', 'https://fast.vidalytics.com/embeds/KqptozFk/yNAV8EKoYihryi5m/');
-        </script>
-      </div>
-
-      <p class="cue">Watch the 2-min video</p>
-
       <div class="msg">
         <p>Hey it&rsquo;s Nick from Bethel Arise &amp; Build.</p>
-        <p>I have a personal invite that I&rsquo;d like to share with you.</p>
-        <p>I call it, the &ldquo;Increase Income&rdquo; framework session.</p>
-        <p>It&rsquo;s a 30-Min Video Call with me. Click below to get it.</p>
+        <p>I&rsquo;d love to connect with you via a 1:1 Video Call.</p>
       </div>
 
-      <a class="btn" href="https://calendly.com/nick-dan-bethel/video-call-with-nick-from-bethel-a-b" target="_blank" rel="noopener">Yes, I want this for Free</a>
+      <a class="btn" href="https://calendly.com/nick-dan-bethel/video-call-with-nick-from-bethel-a-b" target="_blank" rel="noopener">Schedule my 15-Min Video Call</a>
     </section>
   </main>
 
-  <p class="fine"><strong>Disclaimer:</strong> Not professional or financial advice on behalf of Nick or Bethel. For informational purposes only.</p>
 </body>
 </html>
